@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Images/splash-bg.gif" translatesAutoresizingMaskIntoConstraints="NO" id="gWy-9v-RXc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DreaMachine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j81-qi-fGQ">
+                                <rect key="frame" x="103" y="399.5" width="170.5" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock your brain’s full creative potential through auditory-visual stimulation. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXa-TC-9CG">
+                                <rect key="frame" x="36" y="468.5" width="302" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkc-fG-UPV">
+                                <rect key="frame" x="107" y="586" width="160" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="gpd-vh-CMX"/>
+                                    <constraint firstAttribute="width" constant="160" id="shE-bX-FM8"/>
+                                </constraints>
+                                <state key="normal" image="ic-start">
+                                    <color key="titleColor" red="0.0078431372550000003" green="0.67843137249999996" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gWy-9v-RXc" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3vl-mA-hqN"/>
+                            <constraint firstItem="gWy-9v-RXc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="7hD-FH-zGP"/>
+                            <constraint firstAttribute="trailing" secondItem="gWy-9v-RXc" secondAttribute="trailing" id="9Q7-Wo-VdV"/>
+                            <constraint firstAttribute="trailing" secondItem="dXa-TC-9CG" secondAttribute="trailing" constant="37" id="CI5-a7-lSC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Qkc-fG-UPV" secondAttribute="bottom" constant="30" id="Dmq-gj-nVG"/>
+                            <constraint firstItem="Qkc-fG-UPV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EAt-9J-gQT"/>
+                            <constraint firstItem="j81-qi-fGQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JxG-gC-BzS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="gWy-9v-RXc" secondAttribute="bottom" id="QWs-Lo-aQ5"/>
+                            <constraint firstItem="dXa-TC-9CG" firstAttribute="top" secondItem="j81-qi-fGQ" secondAttribute="bottom" constant="34" id="chq-ea-Pwe"/>
+                            <constraint firstItem="j81-qi-fGQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.25" id="mu1-5L-Wmr"/>
+                            <constraint firstItem="dXa-TC-9CG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="36" id="zWg-7p-myx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Images/splash-bg.gif" width="16" height="16"/>
+        <image name="ic-start" width="160" height="51"/>
+    </resources>
+</document>
